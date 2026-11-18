@@ -1,0 +1,61 @@
+:root {
+  --bg: #080705;
+  --ink: #f6f1e7;
+  --ink-dim: rgba(246, 241, 231, 0.64);
+  --ink-faint: rgba(246, 241, 231, 0.38);
+  --ember: #ff8a3d;
+  --ember-bright: #ffb06b;
+  --ember-soft: #ffd9a8;
+  --glass-bg: rgba(20, 16, 12, 0.35);
+  --glass-border: rgba(255, 217, 168, 0.16);
+  --glass-highlight: rgba(255, 255, 255, 0.08);
+
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Manrope", sans-serif;
+
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--ember);
+  color: #140b05;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,155 @@
+.timeline {
+  margin-top: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 1.25rem;
+}
+
+.marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--ember);
+  box-shadow: 0 0 0 4px rgba(255, 138, 61, 0.15);
+  flex-shrink: 0;
+}
+
+.line {
+  width: 1px;
+  flex: 1;
+  margin-top: 6px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 217, 168, 0.3),
+    transparent
+  );
+}
+
+.item:last-child .line {
+  display: none;
+}
+
+.card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  padding: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.role {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.company {
+  font-size: 0.9rem;
+  color: var(--ember-soft);
+  margin-top: 0.2rem;
+}
+
+.period {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  white-space: nowrap;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.list li {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(246, 241, 231, 0.35);
+}
+
+.impactBlock {
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.impactLabel {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.7rem;
+}
+
+.impactList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.impactList li {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.impactList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ember);
+}
+
+@media (max-width: 560px) {
+  .cardHead {
+    flex-direction: column;
+  }
+}

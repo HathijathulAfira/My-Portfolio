@@ -1,0 +1,45 @@
+.card {
+  margin-top: 2.75rem;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 1.25rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 640px;
+}
+
+.markerCol {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.4rem;
+}
+
+.markerDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ember);
+  box-shadow: 0 0 0 5px rgba(255, 138, 61, 0.15);
+}
+
+.degree {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.institution {
+  font-size: 0.95rem;
+  color: var(--ember-soft);
+  margin-bottom: 0.4rem;
+}
+
+.detail {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+}

@@ -1,0 +1,51 @@
+.section {
+  position: relative;
+  background: var(--bg);
+  padding: clamp(5rem, 12vh, 8rem) clamp(1.25rem, 5vw, 3rem);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ember-soft);
+  margin-bottom: 1.1rem;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 1px;
+  background: var(--ember);
+}
+
+.heading {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+  line-height: 1.15;
+  color: var(--ink);
+  max-width: 20ch;
+  margin-bottom: 1rem;
+}
+
+.lede {
+  max-width: 62ch;
+  font-size: clamp(0.98rem, 1.4vw, 1.1rem);
+  line-height: 1.75;
+  color: var(--ink-dim);
+}
+
+.altBg {
+  background: linear-gradient(180deg, var(--bg) 0%, #0d0a07 100%);
+}

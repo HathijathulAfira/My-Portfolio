@@ -1,0 +1,21 @@
+.footer {
+  background: var(--bg);
+  border-top: 1px solid var(--glass-border);
+  padding: 1.75rem clamp(1.25rem, 5vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+.backToTop {
+  color: var(--ink-dim);
+  transition: color 0.25s ease;
+}
+
+.backToTop:hover {
+  color: var(--ember-soft);
+}
